@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
+func showName(names []string) {
+
+	for i, showname := range names {
+		fmt.Printf("%d %s\n", i+1, showname)
+	}
+
+}
+
 func main() {
 
 	// name := "samrat pandey"
@@ -12,7 +20,9 @@ func main() {
 	names := []string{"John", "Emma", "Michael", "Sophia", "William", "Olivia", "James", "Amelia",
 		"Benjamin", "Isabella", "Daniel", "Mia", "Alexander", "Charlotte", "Ethan", "Emily", "Jacob", "Ava", "Ryan", "Evelyn"}
 
-	for i, name := range names {
-		fmt.Printf("%d. my name is %s\n", i+1, name)
-	}
+	showName(names)
+	// for i, name := range names {
+	// 	fmt.Printf("%d %s\n", i+1, name)
+	// }
+
 }
